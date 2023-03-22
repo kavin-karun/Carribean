@@ -1,0 +1,222 @@
+
+<html>
+<head>
+<style>
+.header{padding:20px;
+background-color:linen;
+text-align:center;
+width:97%;
+height:200px;
+position:relative;
+top:0;
+overflow:hidden;
+}
+.main {
+padding: 16px;
+margin-top: 30px;
+height: 3000px; 
+}
+.middle{color:white;
+text-align:center;
+padding:100px;
+background-position:center;
+background-image:url("https://travellersworldwide.com/wp-content/uploads/2022/05/shutterstock_1938868960-1.png.webp");
+}
+.content{background-color:black;
+opacity:0.8;
+font-size:30px;
+border:10px black solid;
+padding:20px;
+font-family:"Times New Roman";
+}
+.footer{background-color:lightskyblue;
+padding:10px;
+text-align:center;
+font-size:20px;
+color:black;
+}
+.btn{font-size:20px;
+
+}
+.container{height:200px;
+width:200px;
+float:right;
+}
+.wrapper{opacity:0.9;
+width:1200px;
+height:3000px;
+border:black solid 1px;
+padding:50px;
+text-align:center;
+background-color:white;
+}
+.styled-table{border-collapse:collapse;
+margin-left-auto;
+margin-right-auto;
+font-size:0.9 em;
+font-family:sans-serif;
+min-width:400 px;
+box-shadow:0 0 20 px rgba(0,0,0,0.15)
+}
+thead tr {background-color:#009879;
+text-align:center;
+color:#ffffff;
+} 
+th,td{padding:12px 67px;
+}
+tr{border-bottom:1px solid #dddddd;
+}
+tr:nth-of-type(even){background-color:cyan;
+}
+tr:last-of-type{border-bottom:2px solid #009879;
+}
+tr.active-row{font-weight:bold;
+color:#009879;
+}
+h2.shadow{text-shadow:2px 2px blue;
+text-align:center;
+}
+h3.shadow{text-shadow:2px 2px green;
+}
+.rotateimg90{transform:rotate 90 deg;
+}
+#cf{height:200px;
+width:200px;
+margin:0px;
+transition:background-image 4s ease-in-out;
+background-image:url("data:image/jpeg;base64,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");
+background-size:cover;
+background-repeat:no-repeat;
+}
+#cf:hover{background-image:url("https://www.celebritycruises.com/blog/content/uploads/2021/04/things-to-do-in-the-caribbean-st-vincent-dark-view-waterfall-hero.jpg");
+}
+body{margin:0;
+font-weight:800;
+background-color:#ffffff;
+}
+nav{float:right;
+}
+nav ul{margin:0;
+padding:0;
+list-style:none;
+}
+nav li{margin-left:70px;
+margin-top:20px;
+display:block;
+position:relative;
+main-padding:16px
+}
+nav a{color:#444;
+text-decoration:none;
+text-transform:small-caps;
+font-size:14px;
+}
+nav a:hover{color:#000;
+}
+body{align:center;
+
+}
+</style>
+</head>
+<body>
+<div class = "header">
+
+<img src = "travellogo.jpg" height= "100" width = "100"><div class = "container">
+<nav>
+<ul>
+<li><a href = "travel.html">Home</a></li>
+<li><a href = "#Hotels">Hotels</a></li>
+<li><a href = "#Places">Places</a></li>
+<li><a href = "Contactus.html">Contact us</a></li>
+</ul>
+</nav>
+</div>
+
+</div>
+<div class = "main">
+<div class = "middle"><h1 class = "content">Welcome to my favourite destination in the world.</h1></div>
+<div class = "wrapper"><p style = "font-size:20px;">The Caribbean is a joyous mosaic of islands beckoning paradise-hunters, an explosion of color, fringed by beaches and soaked in rum.</p>
+<div id = "Places">
+<h1>5 great places to visit in The Carribean</h1>
+<ol>
+<li><h2>St Lucia</h2><img src = "https://lh5.googleusercontent.com/p/AF1QipN2PFh2Cj-nh6v_tG6G_AHMh49oneCviBUQF2I0=w660-h533-p-k-no">
+<br>
+<h4>A fun day out to a auqapark with more waterslides than you can count!</h4>
+</li>
+<li><h2>Barbados</h2><img src = "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSagsKlpozJlCkpM3SMMzOaWVn8EHk_tw5gHBJ89m9hBHfD24c5s8xbxAWt6WlmEBZNR2Yy2eSjXuFFaj6vmIowvg">
+<h4>Delve into a Limestone cavern with streams and pools for an intersting evening.</h4>
+</li>
+<li><h2>Dominica</h2><img src = "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSxvtkIO7P4Ek-db0evMvq1Buq3QMMLhRVDdZzuxL34bPlp-HzhchV3eNCsra20RjZEjvKjg1Z9kgSZrWbL_E5jCw">
+<h4>Visit a lake boiled by lava, or take a swim in magnificent waterfalls with cold and warm water!</h4> 
+</li>
+<li><h2>Cayman Islands</h2><img src = "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQZk1gJ3uKOt1tr4LdG1zzSRxjenEZKM_a1RVJZPqHEqq1lV2zBc7qoJoDIG8g58rVE9KvfVZjBsTrimpUNdPUMVw">
+<h4>Snorkel in the 7 mile beach or visit the Cayman Turtle Centre to admire the majestic wildlife!</h4>
+</li>
+<li><h2>Bitish Virgin Isles</h2><img src = "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSUsIWRwefH6pdPUyRG816EHPW-OXqjaf_fQAYeLGwvlZ8whNOYqEWlSEykIhCjzH7ACIbn3GAHSUQ6OuTFi1_VaQ">
+<h4>Sail into the clear blue sea or take a swim at one of the 8 beaches!</h4>
+</li>
+</ol>
+</div>
+</div>
+<h1 style = "text-align:center">Carribean places to stay</h1>
+<div id = "Hotels">
+<table class = "styled-table">
+<thead>
+<tr>
+<th>Image</than>
+<th>Hotel Name</th>
+<th>Price</th>
+<th>Facilities</th>
+</tr>
+<tr>
+<td><img src = "https://itc.imgix.net/websiteimages/luxurytravel/sugarb_4.jpg?fit=crop&auto=compress&h=250&w=250" height = "200" width = "200"></td>
+<td>Sugar Beach, a Viceroy Resort</td>
+<td>£1,236</td>
+<td>Buffeut, Free Wifi, 2 Restaurants and 3 Bars </td>
+</tr>
+<tr>
+<td><img src = "https://images.trvl-media.com/lodging/2000000/1930000/1927600/1927524/e2e1a69a.jpg?impolicy=resizecrop&rw=598&ra=fit" height = "200" width = "200"></td>
+<td>Seven Stars Resort and Spa</td>
+<td>£1,267</td>
+<td>Refined resort offering 3 restaurants/bars, as well as a heated saltwater pool & a spa.</td>
+</tr>
+<tr>
+<td><img src = "https://lh3.googleusercontent.com/p/AF1QipPBsW140CQpWP01eIvdulr-uSIUUVYMEvnCUF2z=w296-h202-n-k-rw-no-v1" height = "200" width = "200"></td>
+<td>Curacao Marriott Beach Resort</td>
+<td>£336</td>
+<td>Buffeut, Free Wifi, 2 Restaurants and 3 Bars </td>
+</tr>
+<tr>
+<td><img src = "https://lh3.googleusercontent.com/p/AF1QipMi-c_Jy0kZOhlOJmiCJbumU7emDHGeUBDL15SL=w296-h202-n-k-rw-no-v1" height = "200" width = "200"></td>
+<td>Jade Mountain Resort</td>
+<td>£552</td>
+<td>Buffeut, Free Wifi, 2 Restaurants and 3 Bars </td>
+</tr>
+<tr>
+<td><img src = "https://lh5.googleusercontent.com/proxy/3GKnNGTwwGJMLlUyOv_zOtD3RDgy4yUhdMVrM_ksE8PdVQm9N5TBGHKC7SXQEWqSJGdM-IevOGVLNghilXHwLGIB15ZTaMkxN6eOiVgOgQDwI8TtJLdJ2RQOuyENMKORI-1c4zLULuFWf5ZdLSs9XLLMIno55eQ=w253-h168-k-no" height = "200" width = "200"></td>
+<td>Cap Juluca, A Belmond Hotel, Anguilla
+</td>
+<td>£2039</td>
+<td>Buffeut, Free Wifi, 2 Restaurants and 3 Bars </td>
+</tr>
+</table>
+</div>
+<h2 class = "shadow">You are going to love the Carribean!</h2>
+<div>
+<h3 class = "shadow">Great beaches</h3>
+<img src = "data:image/jpeg;base64,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" class = "rotateimg90" height = "200px" width = "200">
+<br>
+<b>With its palm-fringed bays, shallow reefs and rustic rum bars, the Caribbean offers some of the world's best tropical beach breaks. You'll find thousands of beaches with clear waters and warm weather on these diverse islands, which extend in a chain from the southern tip of Florida to the northern coast of Venezuela.</b>
+</div>
+<div>
+<h3 class = "shadow">Windsurfing and waterskiing</h3>
+<img src = "https://windfoilzone.com/wp-content/uploads/2021/05/what_is_windsurfing.jpg" width = "200px" height = "200px">
+<br>
+<b>Windsurfing is a wind propelled water sport that is a combination of sailing and surfing.Water skiing (also waterskiing or water-skiing) is a surface water sport in which an individual is pulled behind a boat or a cable ski installation over a body of water, skimming the surface on two skis or one ski.</b>
+</div>
+<div id = "cf">
+</div>
+</div>
+<div class = "footer"><p>To know more about The Carribean <a href = "https://www.tui.co.uk/destinations/caribbean/holidays-caribbean.html">Click here</a></p></div>
+</body>
+</html>
